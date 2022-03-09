@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 function App() {
   
   return (
-    <div className="Calculator-grid">
+    <div className="calculator-grid">
       <div className="output">
-        <div className="previous-operand"></div>
-        <div className="current-operand"></div>
+        <div className="previous-operand">123,123 *</div>
+        <div className="current-operand">123241</div>
           </div>
 
           <button className="span-two">AC</button>
