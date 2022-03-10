@@ -8,7 +8,7 @@ type OperationButtonProps = {
 }
 const OperationButton = ({dispatch, operation}:OperationButtonProps ) => {
   return (
-      <button onClick={() => dispatch}>{operation}</button>
+      <button onClick={() => dispatch({type:'CHOOSE_OPERATION', payload:{operation}})}>{operation}</button>
   )
 }
 

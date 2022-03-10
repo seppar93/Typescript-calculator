@@ -6,7 +6,8 @@ type DigitButtonProps = {
   digit:string
 }
 export const DigitButton = ({dispatch, digit}: DigitButtonProps) => {
+
   return (
-    <button onClick={() => dispatch}>{digit}</button>
+    <button onClick={() => dispatch({type:'ADD_DIGIT', payload:{digit}})}>{digit}</button>
   )
 }
